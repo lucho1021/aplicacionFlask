@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <tittle></title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+     <div class="container-fluid">
+        <a class="navbar-brand" href="/">Agencia de Turismo el Paisa</a>
+     </div>
+    </nav>
+
+    <img class="imagens" src="https://sites.google.com/site/educacionparaelturismounimet/_/rsrc/1499482008903/agencias-del-viajes-y-mayorista-de-turismo/Ventajas-viajar-agencia-viajes_ECDIMA20160624_0002_21.jpg" alt="">
+
+    <button><a href="">Inicio</a></button>
+    <button><a href="about">Arma tu plan</a></button>
+    <button><a href="">Destinos</a></button>
+
+    <div class="container p-4">
+    {% block content %}
+
+
+
+    {% endblock %}
+    </div>
+
+
+    <div class="centempresa">
+    <div class="p-5 mb-4 bg-light rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">¿Que hace una Empresa de turismo?</h1>
+        <p class="col-md-8 fs-4">La empresa turística o también conocida como empresa de turismo, brinda los servicios necesarios para los clientes que requieren viajar por necesidad o por diversión, a los que se les denomina turistas. </p>
+        <p class="col-md-8 fs-4">Los turistas solicitan los servicios de una empresa de turismo cuando: Salen a vacacionar. Viajan motivados para la educación y formación. Asisten a viajes de negocios, congresos, entre otros. </p>
+      </div>
+    </div>
+    </div>
+
+  </body>
+</html>
